@@ -8,7 +8,6 @@ import AuthButton from "@/components/AuthButton";
 
 const Navbar = async () => {
   const session = await getServerSession();
-  console.log(session);
 
   return (
     <header className="px-5 py-3 bg-white shadow-sm font-work-sans">
@@ -31,7 +30,7 @@ const Navbar = async () => {
 
               <AuthButton
                 type="logout"
-              > 
+              >
                 <span>Logout</span>
               </AuthButton>
 
@@ -40,12 +39,12 @@ const Navbar = async () => {
               </Link>
             </>
           ) : (
-              <AuthButton
-                type="login"
-                provider='github'
-              >
-                Login
-              </AuthButton>
+            <AuthButton
+              type="login"
+              provider='github'
+            >
+              Login
+            </AuthButton>
           )}
         </div>
       </nav>

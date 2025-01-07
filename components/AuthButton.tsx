@@ -10,15 +10,15 @@ type AuthButtonProps = {
 }
 
 const AuthButton: FC<AuthButtonProps> = ({ provider, type, children }) => {
-    const action = () => type === "login" && provider ? signIn(provider) : signOut();
+    const action = () => type === "login" && provider ? signIn(provider) : signOut({ callbackUrl: "/" });
 
     return (
-        <button 
+        <button
             type="button"
             onClick={action}
         >
             {children}
-        </button>    
+        </button>
     )
 }
 
