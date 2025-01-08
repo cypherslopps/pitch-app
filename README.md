@@ -1,6 +1,6 @@
-#Learning Nextjs to Proficiency;
+# Learning Nextjs to Proficiency;
 
-##Stack: 
+## Stack: 
 - Sanity: For managing content
 - Zod: For Validation
 - Next- Auth: OAuth and Authentication
@@ -8,5 +8,5 @@
 - Nextjs: Frontend Framework
 - Shadcn/ui: UI Component Library
 
-##Things I learnt:
+## Things I learnt:
 - HMR (Hot Module Replacement)
