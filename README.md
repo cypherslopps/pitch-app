@@ -10,6 +10,7 @@
 
 ## Things I learnt:
 - HMR (Hot Module Replacement)
+- Integrated 
 - Nextjs remote patterns (
     ```
         images: {
@@ -23,3 +24,4 @@
         }
     ```
 )
+- Sanity Integration
