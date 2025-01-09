@@ -10,6 +10,7 @@
 
 ## Things I learnt:
 - HMR (Hot Module Replacement)
+- Learnt how to use Sanity Query Language (GROQ - Graph-Relational Object Queries)
 - Integrated 
 - Nextjs remote patterns (
     ```
@@ -25,3 +26,12 @@
     ```
 )
 - Sanity Integration
+
+
+### GROQ (Graph-Relational Object Queries)
+```
+    *[_type == 'movie' && releaseYear >= 1979] 
+```
+A query typically starts with *. The asterisk represents every document in your dataset.
+
+- Resource: (https://www.sanity.io/docs/how-queries-work)
