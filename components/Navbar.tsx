@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Form from 'next/form'
 import { getServerSession } from "next-auth";
 
 import AuthButton from "@/components/AuthButton";
@@ -34,7 +33,7 @@ const Navbar = async () => {
                 <span>Logout</span>
               </AuthButton>
 
-              <Link href={`/user/${session?.id}`}>
+              <Link href={`/user/${session?.user?.name}`}>
                 <span>{session?.user?.name}</span>
               </Link>
             </>

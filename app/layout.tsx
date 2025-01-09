@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Provider from "@/providers";
 import "easymde/dist/easymde.min.css";
 // import { Toaster } from "@/components/ui/toaster";
 

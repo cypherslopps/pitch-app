@@ -9,7 +9,7 @@ const handler = NextAuth({
     })
   ],
   callbacks: {
-    async signIn({ user, account, profile }) {
+    async signIn({ profile }) {
       if (!(profile as Profile).email) return false; // Prevent sign-in for unverified emails
       console.log("successful. Check database connection");
       return true;
